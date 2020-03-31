@@ -36,6 +36,7 @@ There is the list of parameters in the config file:
 - *data_path*: string, *"path to folder which contains folder videos"*
 - *class_label*: string, *"path to class index, txt file"*
 - *weight_folder*: string, *"path to folder which contains training'weights"*
+- *model_path*: string, *"path to folder which contains weight for testing"*
 - *num_segments*: int, *"number of segments that we split the video into"*
 - *batch_size*: int, *"number of videos we will load while training"*
 - *size*: int, *"size of each frame"*
