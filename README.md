@@ -3,6 +3,17 @@
 ## Description
 Our code is reconstructed code from origin github: https://github.com/yjxiong/tsn-pytorch for only RGB stream.
 
+## Setup environment
+
+Run the scripts to create a virtual environment and install dependency libraries
+
+```
+$conda create -n tsn python=3.6
+$conda activate tsn
+$pip install -r requirements.txt
+
+```
+
 ## Dataset
 
 - extract RGB frames from each video in UCF101 dataset with sampling rate: 10 fps
@@ -55,3 +66,13 @@ There is the list of parameters in the config file:
 - *eval_freq*: int, *"Saving weight of model after number of epochs"*
 - *num_worker*: int, *"number of worker"*
 - *gpus*: string, *"multi": using multiple of gpus, "cuda:0": specific gpu, ...*
+
+## Testing
+Adjust "model_path" in config file for loading training weight to model
+
+Then run:
+
+```
+python test.py
+
+```
